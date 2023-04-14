@@ -3,6 +3,6 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: mongo-config
-  namespace: schalk
+  namespace: schalk-prod
 data:
   mongo-url: mongo-service
