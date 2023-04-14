@@ -8,9 +8,9 @@ metadata:
 spec:
   project: default
   source:
-    path: helm
-    repoURL: https://github.com/schalla7/schalk-argo-config
+    repoURL: https://github.com/schalla7/schalk-argo-config.git
     targetRevision: HEAD
+    path: helm/templates
     
   destination:
     namespace: schalk-prod
