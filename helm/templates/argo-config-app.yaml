@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: webapp-schalk
+  name: argo-config-app
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     path: helm
-    repoURL: https://github.com/schalla7/angular-timmy
+    repoURL: https://github.com/schalla7/schalk-argo-config
     targetRevision: HEAD
     
   destination:
